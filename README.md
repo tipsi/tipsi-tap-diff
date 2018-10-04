@@ -55,7 +55,7 @@ test('timing test', (t) => {
 })
 ```
 
-#Options
+## Options
 
 ```
 Options:
