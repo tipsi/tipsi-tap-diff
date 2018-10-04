@@ -1,5 +1,3 @@
-# tap-diff
-
 [![npm version](https://badge.fury.io/js/tipsi-tap-diff.svg)](http://badge.fury.io/js/tipsi-tap-diff)
 
 ![Screenshot](screenshot1.png)
