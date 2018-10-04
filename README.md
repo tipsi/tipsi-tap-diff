@@ -1,8 +1,6 @@
 # tap-diff
 
-[![npm version](https://badge.fury.io/js/tap-diff.svg)](http://badge.fury.io/js/tap-diff)
-
-The most human-friendly [TAP reporter](https://github.com/substack/tape#pretty-reporters).
+[![npm version](https://badge.fury.io/js/tipsi-tap-diff.svg)](http://badge.fury.io/js/tipsi-tap-diff)
 
 ![Screenshot](screenshot1.png)
 
@@ -10,10 +8,8 @@ The most human-friendly [TAP reporter](https://github.com/substack/tape#pretty-r
 
 ## How to use
 
-You can use tap-diff in the same way as other [TAP reporters](https://github.com/substack/tape#pretty-reporters).
-
 ```
-npm install -g tap-diff
+npm install -g tipsi-tap-diff
 ```
 
 ```
