@@ -33,10 +33,15 @@ Or use with `createStream()`:
 'use strict'
 
 const test = require('tape')
-const tapDiff = require('tap-diff')
+const tapDiff = require('tipsi-tap-diff')
+
+const options = { bail: true }
+const callback = () => {
+ console.log('Complete callback')
+}
 
 test.createStream()
-  .pipe(tapDiff())
+  .pipe(tapDiff(options, callback))
   .pipe(process.stdout)
 
 test('timing test', (t) => {
@@ -48,6 +53,30 @@ test('timing test', (t) => {
     t.equal(Date.now() - start, 100)
   }, 100)
 })
+```
+
+#Options
+
+```
+Options:
+
+  json[=indent]
+    Output event data as JSON with the specified indentation (default=2)
+
+  tap
+    Output data as reconstituted TAP based on parsed results
+
+  lines
+    Output each parsed line as it is recognized by the parser
+
+  bail
+    Emit a `Bail out!` at the first failed test point encountered
+
+  ignore-all-whitespace
+    Skip over blank lines outside of YAML blocks
+
+  omit-version
+    Ignore the `TAP version 13` line at the start of tests
 ```
 
 ## License
